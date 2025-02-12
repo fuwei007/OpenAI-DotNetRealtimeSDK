@@ -9,7 +9,21 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Navbot.RealtimeApi.Dotnet.SDK.WPF" Version="1.0.20" />
+    <None Remove="Resources\default-ai.png" />
+    <None Remove="Resources\default-user.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Navbot.RealtimeApi.Dotnet.SDK.WPF" Version="1.0.25" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\default-ai.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\default-user.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
 </Project>
